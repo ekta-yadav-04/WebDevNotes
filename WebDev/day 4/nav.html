@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+
+    
+    <style>
+        /* Ensuring no default margin/padding */
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            color: cornflowerblue;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Vertically center the children */
+            height: 100vh;
+            flex-direction: row; /* Default row direction */
+        }
+        .childone:hover{
+            background-color: chartreuse;
+            transform: rotate(90deg);
+            transition: 1s ease-in;
+        }
+
+        .childone {
+            background-color: aliceblue;
+            height: 370px;
+            width: 300px;
+            padding: 30px;
+        }
+        .childtwo:hover
+        {
+            background-color:
+        brown;
+        transform: scale(1.09);
+        transition: 1s ease-in;
+        }
+
+        .childtwo {
+            background-color: aqua;
+            height: 370px;
+            width: 300px;
+            padding: 30px;
+        }
+        
+
+        
+        .menu ul{
+            gap: 60px;
+            height: 30px;
+            text-align: center;
+            display: flex;
+            list-style-type: none;
+            text-decoration: u;
+            background-color: palevioletred;
+            margin: 8px;
+            justify-content: flex-end;
+            font-size: larger;
+
+
+        }
+        .navbar
+        {
+            background-color: burlywood;
+            height: 40px;
+            
+            display: flex;
+            justify-content: space-between;
+            
+            
+        }
+        .logo
+        {
+            display: flex;
+            justify-content: flex-start;
+           height: 30px;
+           
+           
+
+        }
+        li:hover{
+            background-color:gold;
+            transform: scale(1.2);
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img height="100vh" src="https://img.freepik.com/premium-vector/hotel-logo-design_423075-16.jpg" alt="">
+
+        </div>
+
+        <div class="menu">
+            <ul style="text-align: end;">
+                <li> <a href=""> home</a></li>
+                <li><a href=""> contact us</a></li>
+                <li><a href=""> map</a></li>
+                <li><a href=""> accomodation </a></li>
+                <li><a href=""> destination</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="parent">
+        <div class="childone"> <h1  style="background-color: pink;">
+            This is HTML. <br>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt ducimus animi corrupti maiores totam? Dolorum commodi veniam voluptates aliquam culpa aliquid maiores quidem a vel? Mollitia quos repellendus rerum.</h2>
+        </h1></div>
+        <div class="childtwo">
+            <img height="370" width="300" src="https://tse2.mm.bing.net/th?id=OIP.XzXEQiXbf_mMCu-YBed60gHaFP&pid=Api&P=0&h=180" alt="">
+        </div>
+    </div>
+
+</body>
+</html>
